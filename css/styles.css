@@ -758,7 +758,7 @@ button {
 
 /* Modal window */
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -768,14 +768,38 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 528px;
+  min-height: 581px;
 
   background-color: #fff;
-} */
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 30px;
+  width: 30px;
+  margin: 8px;
+  padding: 0;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}

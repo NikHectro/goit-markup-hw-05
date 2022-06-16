@@ -57,7 +57,7 @@
       <!--Hero-->
       <section class="section hero">
         <h1 class="hero-title">Ефективні рішення<br />для вашого бізнесу</h1>
-        <button type="button" class="button">Заказати послугу</button>
+        <button type="button" class="button" data-modal-open>Заказати послугу</button>
       </section>
 
       <!--Features-->
@@ -417,8 +417,15 @@
       </div>
     </footer>
 
-    <div class="backdrop">
-      <div class="modal"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close" data-modal-close>
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/icons.svg#vector"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
