@@ -427,10 +427,11 @@ button {
 }
 
 /* Social-net icons */
+.social-net {
+  display: flex;
+}
 
 .soc-box {
-  display: inline-flex;
-
   border-radius: 50%;
 }
 
@@ -749,10 +750,10 @@ button {
   line-height: 1.56;
   color: var(--contrast-color);
 
+  transform: translateY(100%);
   transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
 }
 
 .portf-link:hover .overlay-text,
